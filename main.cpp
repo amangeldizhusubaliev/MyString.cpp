@@ -6,6 +6,7 @@ using namespace std;
 
 int main() {
     MyString a; cin >> a;
-    cout << "thats ma boi   |" << a << "|\n";
+    a = "hui";
+    cout << a << "\n";
     return 0;
 }
