@@ -63,7 +63,7 @@ public:
     }
 
     inline bool empty() const {
-        return size == 0;
+        return sz == 0;
     }
 
     inline char* begin() {
@@ -103,6 +103,6 @@ inline bool operator!=(const MyString& a, const MyString& b) {
 
 std::istream& operator>>(std::istream& inp, MyString& a);
 
-std::ostream& operator<<(std::ostream& out, const MyString& a) {
+inline std::ostream& operator<<(std::ostream& out, const MyString& a) {
     return out << a.c_str();
 }
